@@ -1,0 +1,126 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-greyish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.product {
+  height: 50vh;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+body {
+  background-color: var(--cream);
+
+  font-family: 'Fraunces', serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin: 20vh auto;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.product-details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+.product-mobile {
+  display: none;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--dark-greyish-blue);
+}
+
+.product-title {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.product-name {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.product-ad {
+  line-height: 20px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 23px;
+}
+
+.new-price {
+  color: var(--dark-cyan);
+  font-weight: 700;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.cart {
+  background-color: var(--dark-cyan);
+  border: none;
+  color: var(--white);
+  padding: 16px 61px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.cart:hover,
+.cart:active {
+  background-color: hsl(158, 36%, 20%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 400px) {
+  .product {
+    display: none;
+  }
+  .product-mobile {
+    display: block;
+    width: 90vw;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  main {
+    flex-direction: column;
+    width: 90vw;
+    margin: 30px auto;
+  }
+}
