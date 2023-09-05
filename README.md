@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Qayyax/product-review-card-component)
-- Live Site URL: [Add live site URL here](https://productreview1.netlify.app/)
+- Solution URL: [GitHub](https://github.com/Qayyax/product-review-card-component)
+- Live Site URL: [Deployed Site](https://productreview1.netlify.app/)
 
 ## My process
 
