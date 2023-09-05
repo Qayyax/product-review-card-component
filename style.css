@@ -108,7 +108,7 @@ p {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .product {
     display: none;
   }
